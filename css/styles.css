@@ -203,7 +203,9 @@ img {
   padding-bottom: 200px;
 }
 
-.hero-button {
+.hero-button,
+.btn-send,
+.btn-submit-form {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -222,7 +224,9 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.btn-send:hover,
+.btn-send:focus {
   color: var(--logo-sec-color);
 }
 
@@ -520,26 +524,25 @@ img {
   justify-content: center;
 }
 
+.form-input {
+  width: 358px;
+  padding: 15px 16px;
+
+  background-color: transparent;
+  color: var(--other-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
 .btn-send {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: var(--other-color);
-  background-color: var(--logo-color);
-  cursor: pointer;
-
   margin-left: 12px;
   padding: 10px 29px;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe .icon {
@@ -589,7 +592,7 @@ img {
   border-radius: 4px;
 }
 
-.close-modal {
+.btn-close-modal {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -602,6 +605,44 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal .icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.modal-form {
+  width: 100%;
+  padding: 40px;
+}
+
+.modal-form p {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+
+.modal-input {
+  width: 100%;
+  margin-bottom: 28px;
+  /* height: 40px; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-input:last-child {
+}
+
+.modal textarea {
+  resize: none;
 }
 
 /*страница портфолио*/
